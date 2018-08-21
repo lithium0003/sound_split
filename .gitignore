@@ -1,0 +1,3 @@
+*.o
+*.d
+/sound_split
