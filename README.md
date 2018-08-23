@@ -70,6 +70,6 @@ These codes are licensed under CC0.
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png "CC0")](http://creativecommons.org/publicdomain/zero/1.0/deed.en)
 
 ## reference
-[可変窓を用いた高速再帰スペクトル解析　中辻 秀人　著][ref1]
+[可変窓を用いた高速再帰的スペクトル解析　中辻 秀人　著][ref1]
 
 [ref1]:https://www.amazon.co.jp/dp/4862238378
