@@ -21,4 +21,4 @@ install:
     - PATH=${CUDA_HOME}/bin:${PATH}
 
 script:
-    - make && ./soude_split
+    - make && ./sound_split
