@@ -18,7 +18,7 @@ addons:
 
 before_install:
     - export CXX=g++-7
-    - ls /usr/lib/nvidia-cuda-toolkit/bin
+    - ls -r /usr/lib/nvidia-cuda-toolkit/*
     - $(ls /usr/local/cuda/bin/cuda-install-samples*.sh) ~
 
 script:
