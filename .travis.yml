@@ -14,11 +14,11 @@ addons:
             - nvidia-cuda-toolkit
             - nvidia-cuda-dev
             - nvidia-profiler
-            - nvidia-cuda-doc
+            - cuda-samples
 
 before_install:
     - export CXX=g++-7
-    - ls -r /usr/lib/nvidia-cuda-toolkit/*
+    - ls -r /*
     - $(ls /usr/local/cuda/bin/cuda-install-samples*.sh) ~
 
 script:
