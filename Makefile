@@ -1,7 +1,6 @@
 #!/bin/make
 OPT := -Ofast -march=native -mfpmath=both
 
-CXX := g++
 GTK := `pkg-config --cflags --libs gtk+-3.0`
 PULSE := `pkg-config --cflags --libs libpulse`
 CXXFLAGS := $(OPT) -std=c++1z -Wall -I/usr/local/cuda/include $(GTK) $(PULSE)
