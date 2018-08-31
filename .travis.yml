@@ -12,6 +12,8 @@ addons:
             - libgtk-3-dev
             - libpulse-dev
             - nvidia-cuda-toolkit
+            - nvidia-cuda-dev
+            - nvidia-profiler
 
 before_install:
     - export CXX=g++-7
