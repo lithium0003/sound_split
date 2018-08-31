@@ -18,7 +18,7 @@ addons:
 before_install:
     - export CXX=g++-7
     - wget https://developer.nvidia.com/compute/cuda/9.2/Prod2/local_installers/cuda_9.2.148_396.37_linux
-    - sh cuda_9.2.148_396.37_linux --silent --samples
+    - sh cuda_9.2.148_396.37_linux --silent --samples --samplespath=~
 
 script:
     - make
