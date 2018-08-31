@@ -1,4 +1,6 @@
 # sound_split
+[![Build Status](https://travis-ci.org/lithium0003/sound_split.svg?branch=master)](https://travis-ci.org/lithium0003/sound_split)
+
 音声スペクトル解析プログラム
 
 ## 説明

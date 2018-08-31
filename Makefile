@@ -1,7 +1,6 @@
 #!/bin/make
 OPT := -Ofast -march=native -mfpmath=both
 
-CXX := g++
 GTK := `pkg-config --cflags --libs gtk+-3.0`
 PULSE := `pkg-config --cflags --libs libpulse`
 CXXFLAGS := $(OPT) -std=c++1z -Wall -I/usr/local/cuda/include $(GTK) $(PULSE)
@@ -10,7 +9,7 @@ LDFLAGS := -L/usr/local/cuda/lib64 $(GTK) $(PULSE)
 LIBS := -lcudart
 
 NVCC := nvcc
-NVCCFLAGS := -O3 -I ~/NVIDIA_CUDA-9.2_Samples/common/inc/ -gencode=arch=compute_61,code=sm_61
+NVCCFLAGS := -O3 --compiler-bindir=$(CXX) -I ~/NVIDIA_CUDA-9.2_Samples/common/inc/ -gencode=arch=compute_30,code=sm_30
 
 
 PROGRAM := sound_split

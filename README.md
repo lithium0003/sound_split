@@ -1,4 +1,6 @@
 # sound_split
+[![Build Status](https://travis-ci.org/lithium0003/sound_split.svg?branch=master)](https://travis-ci.org/lithium0003/sound_split)
+
 sound spectrum analyzer
 
 ## description

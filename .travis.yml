@@ -1,0 +1,25 @@
+language: cpp
+compiler:
+    - g++-7
+sudo: required
+addons:
+    apt:
+        sources:
+            - ubuntu-toolchain-r-test
+        packages:
+            - build-essential
+            - g++-7
+            - libgtk-3-dev
+            - libpulse-dev
+
+install:
+    - export CXX=g++-7
+    - wget https://developer.nvidia.com/compute/cuda/9.2/Prod2/local_installers/cuda_9.2.148_396.37_linux
+    - sudo sh cuda_9.2.148_396.37_linux --silent --toolkit --samples --samplespath=~
+    - export CUDA_HOME=/usr/local/cuda
+    - export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:${LD_LIBRARY_PATH}
+    - sudo ldconfig
+    - export PATH=${CUDA_HOME}/bin:${PATH}
+
+script:
+    - make && ./sound_split
