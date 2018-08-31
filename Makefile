@@ -9,7 +9,7 @@ LDFLAGS := -L/usr/local/cuda/lib64 $(GTK) $(PULSE)
 LIBS := -lcudart
 
 NVCC := nvcc
-NVCCFLAGS := -O3 -I ~/NVIDIA_CUDA-9.2_Samples/common/inc/ -gencode=arch=compute_30,code=sm_30
+NVCCFLAGS := -O3 --compiler-bindir=$(CXX) -I ~/NVIDIA_CUDA-9.2_Samples/common/inc/ -gencode=arch=compute_30,code=sm_30
 
 
 PROGRAM := sound_split
